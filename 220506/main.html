@@ -1,0 +1,407 @@
+<DOCTYPE html!>
+
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>zyl</title>
+
+
+        <style>
+            * {
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            ul,
+            li,
+            ol {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+
+            #wrap {
+                width: 100%;
+                height: auto;
+                background-color: darkgreen;
+                position: absolute;
+            }
+
+
+            header {
+                width: 100%;
+                height: 70px;
+                background-color: blue;
+
+            }
+
+            .logo {
+                width: 236px;
+                height: 70px;
+                background-color: aqua;
+                float: left;
+            }
+
+            #absolute {width:100%; height:860px; background-color:pink;}
+
+            .slider {
+                width: 100%;
+                height: 860px;
+                background-color: tomato
+            }
+/*슬라이드 밑에 질문 박스*/
+            .box1 {
+                width: 1200px;
+                height: 105px;
+                background-color: orangered;
+                margin: 0 auto;
+                position: relative;
+                bottom: 61px;
+                left: 0;
+
+            }
+
+            .section1 {
+                width: 100%;
+                height: 900px;
+                background-color: cadetblue;
+            }
+/*3개 나란히 박스 아이콘*/
+            .kind {width:100%; height: 50%; background-color:darkseagreen;
+            display: flex; flex-flow:row wrap; align-items:center; justify-content: center;
+            }
+
+/*what we do 텍스트박스*/
+            .what {width:89%; height:40px; margin:98px 0 0 0px;}
+            .what > h1 {font-size: 44px;}
+/*아이콘1*/
+            .air_flight {width:29%; height:130px; margin:10px; background-color:darkgoldenrod;
+            display:flex
+            }
+            .flight {width:40%; height: 130px; background-color: antiquewhite;}
+            .text1 {width:60%; height: 130px; background-color: forestgreen;}
+/*아이콘2*/
+            .warehaousing {width:29%; height:130px;  margin:10px; background-color:darkgoldenrod;
+            display:flex
+            }
+            .haousing {width:40%; height: 130px; background-color: antiquewhite;}
+            .text2 {width:60%; height: 130px; background-color: forestgreen;}
+/*아이콘3*/
+            .ocean_flight {width:29%; height:130px;  margin:10px; background-color:darkgoldenrod;
+            display:flex
+            }
+            .ocean {width:40%; height: 130px; background-color: antiquewhite;}
+            .text3 {width:60%; height: 130px; background-color: forestgreen;}
+
+/*비행기날아가는 이미지랑 텍스트박스*/
+
+            .quality {width:100%; height: 50%; background-color: darkkhaki;
+            display: flex; flex-flow: row wrap; justify-content: center; align-items: center;
+            }
+            .quality > .fly {width:40%; height: 70%; background-color: black;}
+            .quality > .text4 {width:50%; height: 70%; background-color: darkblue;}
+
+
+/*섹션2*/
+
+            .section2 {
+                width: 100%;
+                height: 770px;
+                background-color:violet;
+
+                display: flex; flex-flow: row wrap; justify-content: center; align-items:space-around;
+            }
+
+/*case study*/
+            .case_study {width:89%; height:40px; display:inline-block; margin: 110px 0 70px 0px; }
+            .case_study > h1 {font-size: 44px;}
+/*첫번째 박스*/
+            .manufacturing {width:29%; height: 450px; margin: 10px; background-color: beige;}
+            .manu_img {width: 100%; height: 250px; }
+            .manufacturing > .text {width: 100%; height: 200px; background-color: aquamarine;}
+/*두번째 박스*/
+            .warehousing {width:29%; height: 450px; margin: 10px;  background-color: beige;}
+            .ware_img {width: 100%; height: 250px; }
+            .warehousing > .text {width: 100%; height: 200px; background-color: aquamarine;}
+/*세번째 박스*/
+            .manufacturing2 {width:29%; height: 450px; margin: 10px;  background-color: beige;}
+            .manu_img2 {width: 100%; height: 250px; }
+            .manufacturing2 > .text {width: 100%; height: 200px; background-color: aquamarine;}
+
+
+/*섹션3*/
+            .section3 {
+                width: 100%;
+                height: 477px;
+                background-color: firebrick;
+                display: flex; flex-flow: row wrap; justify-content: center; align-content: center;
+            }
+
+            .icon1 {width:192px; height: 170px; margin: 2% 5% ; background-color: antiquewhite;}
+            .icon2 {width:192px; height: 170px; margin: 2% 5% ; background-color: antiquewhite;}
+            .icon3 {width:192px; height: 170px; margin: 2% 5%; background-color: antiquewhite;}
+            .icon4 {width:192px; height: 170px; margin: 2% 5%; background-color: antiquewhite;}
+            .icon5 {width:192px; height: 170px; margin: 2% 5%; background-color: antiquewhite;}
+            .icon6 {width:192px; height: 170px; margin: 2% 5%; background-color: antiquewhite;}
+            .icon7 {width:192px; height: 170px; margin: 2% 5%; background-color: antiquewhite;}
+            .icon8 {width:192px; height: 170px; margin: 2% 5%; background-color: antiquewhite;}
+
+/*섹션4*/
+
+            .section4 {
+                width: 100%;
+                height: 950px;
+                background-color: beige;
+            }
+
+            .section4 > .text {width:89%; height:40px; display:inline-block; margin: 110px 0 70px 0px; }
+            .section4 > .text > h1 {font-size: 44px;}
+
+            .section4 > .img_box {width: ;}
+
+            
+
+            .section5 {
+                width: 100%;
+                height: 634px;
+                background-color: thistle
+            }
+
+            .section6 {
+                width: 100%;
+                height: 712px;
+                background-color: burlywood
+            }
+
+
+            .section7 {
+                width: 100%;
+                height: 812px;
+                background-color: darkgray
+            }
+
+            .footer1 {
+                width: 100%;
+                height: 86px;
+                background-color: indianred;
+            }
+
+            footer {
+                width: 100%;
+                height: 573px;
+                background-color: cadetblue;
+            }
+        </style>
+
+
+    </head>
+
+
+    <body>
+
+        <div id="wrap">
+
+            <header>
+                <div class="logo"></div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Get a Quote</a></li>
+                    </ul>
+
+
+                </nav>
+
+            </header>
+
+<!--앱솔루트 무시/ 슬라이더-->
+
+            <div id="absolute">
+
+                <div class="slider"></div>
+
+<!--검색창-->
+                <div class="box1"></div>
+
+
+            </div>
+
+<!--섹션1-->
+
+            <div class="section1">
+<!--3개 나란히 박스 아이콘-->
+                <div class="kind">
+
+                    <div class="what">
+                        <h1>WHAT WE DO</h1>
+                    </div>
+
+
+                    <div class="air_flight">
+                        <img src="" alt="flight" class="flight">
+                        <div class="text1"></div>
+                    </div>
+
+                    <div class="warehaousing">
+                        <img src="" alt="haousing" class="haousing">
+                        <div class="text2"></div>
+
+                    </div>
+
+                    <div class="ocean_flight">
+                        <img src="" alt="ocean" class="ocean">
+                        <div class="text3"></div>
+
+                    </div>
+
+                </div>
+<!--사진이랑 텍스트랑 버튼-->
+                <div class="quality">
+                    <img src="" alt="skfdkrksek" class="fly">
+                    <div class="text4"></div>
+
+                </div>
+
+
+            </div>
+
+
+<!--섹션2-->
+
+            <div class="section2">
+
+<!--텍스트 박스-->
+                <div class="case_study">
+                    <h1>CASE STUDY</h1>
+                </div>
+<!--첫번째 박스-->
+                <div class="manufacturing">
+                    <img src="" alt="d" class="manu_img">
+                    <div class="text">
+                        <h4>MANUFACTURING</h4>
+                        <p>WordPress Website Audit by a<br>Website Maintenance Company</p>
+                        <span class="bt1">View Case Study</span>
+                    </div>
+                </div>
+<!--두번째 박스-->
+                <div class="WAREHOUSING">
+                    <img src="" alt="d" class="WARE_img">
+                    <div class="text">
+                        <h4>WAREHOUSING</h4>
+                        <p>A National Wholesale Distributor</p>
+                        <span class="bt1">View Case Study</span>
+                    </div>
+                </div>
+<!--세번째 박스-->
+                <div class="manufacturing2">
+                    <img src="" alt="d" class="manu_img2">
+                    <div class="text">
+                        <h4>MANUFACTURING</h4>
+                        <p>Customized Fleet Technology<br>Solutions</p>
+                        <span class="bt1">View Case Study</span>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+<!--섹션3 아이콘들-->
+            <div class="section3">
+                <img src="" alt="icon1" class="icon1">
+                <img src="" alt="icon2" class="icon2">
+                <img src="" alt="icon3" class="icon3">
+                <img src="" alt="icon4" class="icon4">
+                <img src="" alt="icon5" class="icon5">
+                <img src="" alt="icon6" class="icon6">
+                <img src="" alt="icon7" class="icon7">
+                <img src="" alt="icon8" class="icon8">
+
+            </div>
+
+
+<!--섹션4-->
+            <div class="section4">
+
+<!--wht choose us-->
+                <div class="text">
+                    <h1>WHY CHOOSE US?</h1>
+                
+                </div>
+
+<!--박스 6개들어간 틀-->
+
+                <div class="img_box">
+
+<!--첫번째 이미지-->                    
+                    <img src="" alt="1" class="image1">
+<!--두번째 텍스트-->
+                    <div class="text1">
+                        <img src="" alt="i" class="icon1">
+                        <div class="textbox">
+                            <h3>cost saving</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit, sed do eiusmod tempor</p>
+                            <span class="more">Learn More</span>
+                        </div>
+
+
+                    </div>
+<!--세번째 이미지-->
+                    <img src="" alt="2" class="image2">
+<!--네번째 텍스트-->
+                    <div class="text2">
+                        <img src="" alt="i" class="icon2">
+                        <div class="textbox">
+                            <h3>cost saving</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit, sed do eiusmod tempor</p>
+                            <span class="more">Learn More</span>
+                        </div>
+
+                    </div>
+<!--다섯번째 이미지-->
+                    <img src="" alt="3" class="image3">
+<!--여섯번째 텍스트-->
+                    <div class="text3">
+                        <img src="" alt="i" class="icon3">
+                        <div class="textbox">
+                            <h3>cost saving</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit, sed do eiusmod tempor</p>
+                            <span class="more">Learn More</span>
+                        </div>
+
+                    </div>
+                    
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="section5"></div>
+            <div class="section6"></div>
+            <div class="section7"></div>
+
+            <div class="footer1"></div>
+
+            <footer></footer>
+
+
+
+        </div>
+
+
+    </body>
+
+    </html>
